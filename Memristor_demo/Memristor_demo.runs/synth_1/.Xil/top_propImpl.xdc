@@ -1,0 +1,13 @@
+set_property SRC_FILE_INFO {cfile:D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/constrs_1/new/top_xdc.xdc rfile:../../../Memristor_demo.srcs/constrs_1/new/top_xdc.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:9 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN E3    IOSTANDARD LVCMOS33 } [get_ports { sys_clk }]; #IO_L12P_T1_MRCC_35 Sch=clk100mhz
+set_property src_info {type:XDC file:1 line:14 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN J15   IOSTANDARD LVCMOS33 } [get_ports { mux_set_port }]; #IO_L24N_T3_RS0_15 Sch=sw[0]
+set_property src_info {type:XDC file:1 line:109 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN D14   IOSTANDARD LVCMOS33 } [get_ports { sync }]; #IO_L1P_T0_AD0P_15 Sch=jb[1]
+set_property src_info {type:XDC file:1 line:110 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN F16   IOSTANDARD LVCMOS33 } [get_ports { gateway_0 }]; #IO_L14N_T2_SRCC_15 Sch=jb[2]
+set_property src_info {type:XDC file:1 line:111 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN G16   IOSTANDARD LVCMOS33 } [get_ports { gateway_1 }]; #IO_L13N_T2_MRCC_15 Sch=jb[3]
+set_property src_info {type:XDC file:1 line:112 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN H14   IOSTANDARD LVCMOS33 } [get_ports { conver_clk }]; #IO_L15P_T2_DQS_15 Sch=jb[4]

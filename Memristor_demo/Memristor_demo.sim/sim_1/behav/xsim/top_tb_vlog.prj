@@ -1,0 +1,27 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Memristor_demo.ip_user_files/ipstatic" \
+"../../../../Memristor_demo.gen/sources_1/ip/floating_point_10/floating_point_10_sim_netlist.v" \
+"../../../../Memristor_demo.gen/sources_1/ip/floating_point_9/floating_point_9_sim_netlist.v" \
+"../../../../Memristor_demo.gen/sources_1/ip/floating_point_8/floating_point_8_sim_netlist.v" \
+"../../../../Memristor_demo.gen/sources_1/ip/floating_point_7/floating_point_7_sim_netlist.v" \
+"../../../../Memristor_demo.gen/sources_1/ip/floating_point_6/floating_point_6_sim_netlist.v" \
+"../../../../Memristor_demo.gen/sources_1/ip/floating_point_5/floating_point_5_sim_netlist.v" \
+"../../../../Memristor_demo.gen/sources_1/ip/floating_point_4/floating_point_4_sim_netlist.v" \
+"../../../../Memristor_demo.gen/sources_1/ip/floating_point_3/floating_point_3_sim_netlist.v" \
+"../../../../Memristor_demo.gen/sources_1/ip/floating_point_2/floating_point_2_sim_netlist.v" \
+"../../../../Memristor_demo.gen/sources_1/ip/floating_point_1/floating_point_1_sim_netlist.v" \
+"../../../../Memristor_demo.gen/sources_1/ip/floating_point_0/floating_point_0_sim_netlist.v" \
+"../../../../Memristor_demo.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" \
+"../../../../Memristor_demo.srcs/sources_1/new/clock_div.v" \
+"../../../../Memristor_demo.srcs/sources_1/new/mux.v" \
+"../../../../Memristor_demo.srcs/sources_1/new/part_0.v" \
+"../../../../Memristor_demo.srcs/sources_1/new/part_1.v" \
+"../../../../Memristor_demo.srcs/sources_1/new/shunt_2_series.v" \
+"../../../../Memristor_demo.srcs/sources_1/new/top.v" \
+"../../../../Memristor_demo.srcs/sim_1/new/top_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

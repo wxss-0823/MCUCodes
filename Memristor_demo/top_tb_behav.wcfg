@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="top_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="55,872.651 ns"></ZoomStartTime>
+      <ZoomEndTime time="56,614.284 ns"></ZoomEndTime>
+      <Cursor1Time time="56,212.566 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="215"></NameColumnWidth>
+      <ValueColumnWidth column_width="116"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/top_tb/u1_top_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/u1_top_tb/gateway_0" type="logic">
+      <obj_property name="ElementShortName">gateway_0</obj_property>
+      <obj_property name="ObjectShortName">gateway_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/gateway_1" type="logic">
+      <obj_property name="ElementShortName">gateway_1</obj_property>
+      <obj_property name="ObjectShortName">gateway_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/u1_top_tb/v_out_fixed" type="array">
+      <obj_property name="ElementShortName">v_out_fixed[15:0]</obj_property>
+      <obj_property name="ObjectShortName">v_out_fixed[15:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">10</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/u1_top_tb/i_out_fixed" type="array">
+      <obj_property name="ElementShortName">i_out_fixed[15:0]</obj_property>
+      <obj_property name="ObjectShortName">i_out_fixed[15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">10</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/u1_top_tb/mux_0_port_0" type="array">
+      <obj_property name="ElementShortName">mux_0_port_0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mux_0_port_0[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_FIXED</obj_property>
+      <obj_property name="AnalogYRangeMin">-2.500000</obj_property>
+      <obj_property name="AnalogYRRangeMax">2.500000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_LINEAR</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/u1_top_tb/mux_1_port_0" type="array">
+      <obj_property name="ElementShortName">mux_1_port_0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mux_1_port_0[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_FIXED</obj_property>
+      <obj_property name="AnalogYRangeMin">-4.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">4.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_LINEAR</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/u1_top_tb/u1_part_0/mux_out" type="array">
+      <obj_property name="ElementShortName">mux_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mux_out[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/u1_top_tb/u1_part_0/mul_0_result" type="array">
+      <obj_property name="ElementShortName">mul_0_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mul_0_result[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/u1_top_tb/u1_part_0/mul_1_result" type="array">
+      <obj_property name="ElementShortName">mul_1_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mul_1_result[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/u1_top_tb/u1_part_0/mul_2_result" type="array">
+      <obj_property name="ElementShortName">mul_2_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mul_2_result[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/u1_top_tb/u1_part_0/mul_3_result" type="array">
+      <obj_property name="ElementShortName">mul_3_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mul_3_result[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/u1_top_tb/u1_part_0/add_0_result" type="array">
+      <obj_property name="ElementShortName">add_0_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">add_0_result[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/u1_top_tb/u1_part_1/part1_2_part0" type="array">
+      <obj_property name="ElementShortName">part1_2_part0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">part1_2_part0[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/u1_top_tb/u1_part_0/v_out" type="array">
+      <obj_property name="ElementShortName">v_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">v_out[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+</wave_config>
