@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.runs/synth_1/top.tcl"
+  variable script "D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.runs/synth_1/top.tcl"
   variable category "vivado_synth"
 }
 
@@ -77,61 +77,60 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.cache/wt [current_project]
-set_property parent.project_path D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.xpr [current_project]
+set_property webtalk.parent_dir D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.cache/wt [current_project]
+set_property parent.project_path D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.xpr [current_project]
 set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
-set_property ip_output_repo d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.cache/ip [current_project]
+set_property ip_output_repo d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/sources_1/new/clock_div.v
-  D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/sources_1/new/mux.v
-  D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/sources_1/new/part_0.v
-  D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/sources_1/new/part_1.v
-  D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/sources_1/new/shunt_2_series.v
-  D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/sources_1/new/top.v
+  D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/sources_1/new/clock_div.v
+  D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/sources_1/new/mux.v
+  D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/sources_1/new/part_0.v
+  D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/sources_1/new/part_1.v
+  D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/sources_1/new/shunt_2_series.v
+  D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/sources_1/new/top.v
 }
-read_ip -quiet D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/sources_1/ip/floating_point_10/floating_point_10.xci
-set_property used_in_implementation false [get_files -all d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_10/floating_point_10_ooc.xdc]
+read_ip -quiet D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/sources_1/ip/floating_point_10/floating_point_10.xci
+set_property used_in_implementation false [get_files -all d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_10/floating_point_10_ooc.xdc]
 
-read_ip -quiet D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/sources_1/ip/floating_point_9/floating_point_9.xci
-set_property used_in_implementation false [get_files -all d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_9/floating_point_9_ooc.xdc]
+read_ip -quiet D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/sources_1/ip/floating_point_9/floating_point_9.xci
+set_property used_in_implementation false [get_files -all d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_9/floating_point_9_ooc.xdc]
 
-read_ip -quiet D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/sources_1/ip/floating_point_8/floating_point_8.xci
-set_property used_in_implementation false [get_files -all d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_8/floating_point_8_ooc.xdc]
+read_ip -quiet D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/sources_1/ip/floating_point_8/floating_point_8.xci
+set_property used_in_implementation false [get_files -all d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_8/floating_point_8_ooc.xdc]
 
-read_ip -quiet D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/sources_1/ip/floating_point_7/floating_point_7.xci
-set_property used_in_implementation false [get_files -all d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_7/floating_point_7_ooc.xdc]
+read_ip -quiet D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/sources_1/ip/floating_point_7/floating_point_7.xci
+set_property used_in_implementation false [get_files -all d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_7/floating_point_7_ooc.xdc]
 
-read_ip -quiet D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/sources_1/ip/floating_point_5/floating_point_5.xci
-set_property used_in_implementation false [get_files -all d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_5/floating_point_5_ooc.xdc]
+read_ip -quiet D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/sources_1/ip/floating_point_5/floating_point_5.xci
+set_property used_in_implementation false [get_files -all d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_5/floating_point_5_ooc.xdc]
 
-read_ip -quiet D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/sources_1/ip/floating_point_3/floating_point_3.xci
-set_property used_in_implementation false [get_files -all d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_3/floating_point_3_ooc.xdc]
+read_ip -quiet D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/sources_1/ip/floating_point_3/floating_point_3.xci
+set_property used_in_implementation false [get_files -all d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_3/floating_point_3_ooc.xdc]
 
-read_ip -quiet D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/sources_1/ip/floating_point_2/floating_point_2.xci
-set_property used_in_implementation false [get_files -all d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_2/floating_point_2_ooc.xdc]
+read_ip -quiet D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/sources_1/ip/floating_point_2/floating_point_2.xci
+set_property used_in_implementation false [get_files -all d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_2/floating_point_2_ooc.xdc]
 
-read_ip -quiet D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/sources_1/ip/floating_point_1/floating_point_1.xci
-set_property used_in_implementation false [get_files -all d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_1/floating_point_1_ooc.xdc]
+read_ip -quiet D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/sources_1/ip/floating_point_1/floating_point_1.xci
+set_property used_in_implementation false [get_files -all d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_1/floating_point_1_ooc.xdc]
 
-read_ip -quiet D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-set_property used_in_implementation false [get_files -all d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
-set_property used_in_implementation false [get_files -all d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
+read_ip -quiet D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+set_property used_in_implementation false [get_files -all d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
 
-read_ip -quiet D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/sources_1/ip/floating_point_0/floating_point_0.xci
-set_property used_in_implementation false [get_files -all d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_0/floating_point_0_ooc.xdc]
+read_ip -quiet D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/sources_1/ip/floating_point_0/floating_point_0.xci
+set_property used_in_implementation false [get_files -all d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_0/floating_point_0_ooc.xdc]
 
-read_ip -quiet D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/sources_1/ip/floating_point_4/floating_point_4.xci
-set_property used_in_implementation false [get_files -all d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_4/floating_point_4_ooc.xdc]
+read_ip -quiet D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/sources_1/ip/floating_point_4/floating_point_4.xci
+set_property used_in_implementation false [get_files -all d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_4/floating_point_4_ooc.xdc]
 
-read_ip -quiet D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/sources_1/ip/floating_point_6/floating_point_6.xci
-set_property used_in_implementation false [get_files -all d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_6/floating_point_6_ooc.xdc]
+read_ip -quiet D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/sources_1/ip/floating_point_6/floating_point_6.xci
+set_property used_in_implementation false [get_files -all d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_6/floating_point_6_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -142,14 +141,14 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/constrs_1/new/top_xdc.xdc
-set_property used_in_implementation false [get_files D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/constrs_1/new/top_xdc.xdc]
+read_xdc D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/constrs_1/new/top_xdc.xdc
+set_property used_in_implementation false [get_files D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/constrs_1/new/top_xdc.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/utils_1/imports/synth_1/mem_neural.dcp
+read_checkpoint -auto_incremental -incremental D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/utils_1/imports/synth_1/mem_neural.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

@@ -3,12 +3,12 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Wed Apr 24 14:02:42 2024
-# Process ID: 1500
-# Current directory: D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.runs/synth_1
+# Start of session at: Mon Apr 21 23:15:40 2025
+# Process ID: 16020
+# Current directory: D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
-# Log file: D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.runs/synth_1/top.vds
-# Journal file: D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.runs/synth_1\vivado.jou
-# Running On: DESKTOP-WXSS, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 4, Host memory: 17001 MB
+# Log file: D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.runs/synth_1/top.vds
+# Journal file: D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.runs/synth_1\vivado.jou
+# Running On: DESKTOP-KPAI7AG, OS: Windows, CPU Frequency: 3494 MHz, CPU Physical cores: 14, Host memory: 34200 MB
 #-----------------------------------------------------------
 source top.tcl -notrace

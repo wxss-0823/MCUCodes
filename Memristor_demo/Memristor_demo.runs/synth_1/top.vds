@@ -3,21 +3,22 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Wed Apr 24 14:02:42 2024
-# Process ID: 1500
-# Current directory: D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.runs/synth_1
+# Start of session at: Mon Apr 21 23:15:40 2025
+# Process ID: 16020
+# Current directory: D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
-# Log file: D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.runs/synth_1/top.vds
-# Journal file: D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.runs/synth_1\vivado.jou
-# Running On: DESKTOP-WXSS, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 4, Host memory: 17001 MB
+# Log file: D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.runs/synth_1/top.vds
+# Journal file: D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.runs/synth_1\vivado.jou
+# Running On: DESKTOP-KPAI7AG, OS: Windows, CPU Frequency: 3494 MHz, CPU Physical cores: 14, Host memory: 34200 MB
 #-----------------------------------------------------------
 source top.tcl -notrace
-create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 482.398 ; gain = 173.914
-Command: read_checkpoint -auto_incremental -incremental D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/utils_1/imports/synth_1/mem_neural.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/utils_1/imports/synth_1/mem_neural.dcp for incremental synthesis
+Command: read_checkpoint -auto_incremental -incremental D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/utils_1/imports/synth_1/mem_neural.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/utils_1/imports/synth_1/mem_neural.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top top -part xc7a100tcsg324-1
 Starting synth_design
+INFO: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* This IP has board specific outputs. Current project board 'unset' and the board 'digilentinc.com:nexys4_ddr:part0:1.1' used to customize the IP 'clk_wiz_0' do not match.
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
@@ -25,119 +26,119 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 12016
-INFO: [Synth 8-11241] undeclared symbol 'div_clk', assumed default net type 'wire' [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/sources_1/new/top.v:48]
+INFO: [Synth 8-7075] Helper process launched with PID 25068
+INFO: [Synth 8-11241] undeclared symbol 'div_clk', assumed default net type 'wire' [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/sources_1/new/top.v:48]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1326.645 ; gain = 411.922
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2316.699 ; gain = 410.566
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'top' [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/sources_1/new/top.v:23]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-1500-DESKTOP-WXSS/realtime/clk_wiz_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-1500-DESKTOP-WXSS/realtime/clk_wiz_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'clock_div' [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/sources_1/new/clock_div.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'clock_div' (0#1) [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/sources_1/new/clock_div.v:23]
-INFO: [Synth 8-6157] synthesizing module 'mux' [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/sources_1/new/mux.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'mux' (0#1) [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/sources_1/new/mux.v:23]
-INFO: [Synth 8-6157] synthesizing module 'part_0' [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/sources_1/new/part_0.v:23]
-INFO: [Synth 8-6157] synthesizing module 'floating_point_0' [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-1500-DESKTOP-WXSS/realtime/floating_point_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'floating_point_0' (0#1) [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-1500-DESKTOP-WXSS/realtime/floating_point_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'floating_point_1' [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-1500-DESKTOP-WXSS/realtime/floating_point_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'floating_point_1' (0#1) [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-1500-DESKTOP-WXSS/realtime/floating_point_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'floating_point_2' [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-1500-DESKTOP-WXSS/realtime/floating_point_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'floating_point_2' (0#1) [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-1500-DESKTOP-WXSS/realtime/floating_point_2_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'floating_point_3' [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-1500-DESKTOP-WXSS/realtime/floating_point_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'floating_point_3' (0#1) [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-1500-DESKTOP-WXSS/realtime/floating_point_3_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'floating_point_4' [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-1500-DESKTOP-WXSS/realtime/floating_point_4_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'floating_point_4' (0#1) [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-1500-DESKTOP-WXSS/realtime/floating_point_4_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'floating_point_5' [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-1500-DESKTOP-WXSS/realtime/floating_point_5_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'floating_point_5' (0#1) [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-1500-DESKTOP-WXSS/realtime/floating_point_5_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'part_0' (0#1) [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/sources_1/new/part_0.v:23]
-INFO: [Synth 8-6157] synthesizing module 'part_1' [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/sources_1/new/part_1.v:23]
-INFO: [Synth 8-6157] synthesizing module 'floating_point_6' [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-1500-DESKTOP-WXSS/realtime/floating_point_6_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'floating_point_6' (0#1) [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-1500-DESKTOP-WXSS/realtime/floating_point_6_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'floating_point_7' [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-1500-DESKTOP-WXSS/realtime/floating_point_7_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'floating_point_7' (0#1) [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-1500-DESKTOP-WXSS/realtime/floating_point_7_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'floating_point_8' [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-1500-DESKTOP-WXSS/realtime/floating_point_8_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'floating_point_8' (0#1) [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-1500-DESKTOP-WXSS/realtime/floating_point_8_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'part_1' (0#1) [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/sources_1/new/part_1.v:23]
-INFO: [Synth 8-6157] synthesizing module 'floating_point_9' [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-1500-DESKTOP-WXSS/realtime/floating_point_9_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'floating_point_9' (0#1) [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-1500-DESKTOP-WXSS/realtime/floating_point_9_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'shunt_2_series' [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/sources_1/new/shunt_2_series.v:22]
-INFO: [Synth 8-6155] done synthesizing module 'shunt_2_series' (0#1) [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/sources_1/new/shunt_2_series.v:22]
-INFO: [Synth 8-6157] synthesizing module 'floating_point_10' [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-1500-DESKTOP-WXSS/realtime/floating_point_10_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'floating_point_10' (0#1) [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-1500-DESKTOP-WXSS/realtime/floating_point_10_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-16020-DESKTOP-KPAI7AG/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-16020-DESKTOP-KPAI7AG/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'clock_div' [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/sources_1/new/clock_div.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_div' (0#1) [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/sources_1/new/clock_div.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mux' [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/sources_1/new/mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux' (0#1) [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/sources_1/new/mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'part_0' [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/sources_1/new/part_0.v:23]
+INFO: [Synth 8-6157] synthesizing module 'floating_point_0' [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-16020-DESKTOP-KPAI7AG/realtime/floating_point_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'floating_point_0' (0#1) [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-16020-DESKTOP-KPAI7AG/realtime/floating_point_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'floating_point_1' [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-16020-DESKTOP-KPAI7AG/realtime/floating_point_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'floating_point_1' (0#1) [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-16020-DESKTOP-KPAI7AG/realtime/floating_point_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'floating_point_2' [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-16020-DESKTOP-KPAI7AG/realtime/floating_point_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'floating_point_2' (0#1) [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-16020-DESKTOP-KPAI7AG/realtime/floating_point_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'floating_point_3' [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-16020-DESKTOP-KPAI7AG/realtime/floating_point_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'floating_point_3' (0#1) [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-16020-DESKTOP-KPAI7AG/realtime/floating_point_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'floating_point_4' [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-16020-DESKTOP-KPAI7AG/realtime/floating_point_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'floating_point_4' (0#1) [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-16020-DESKTOP-KPAI7AG/realtime/floating_point_4_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'floating_point_5' [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-16020-DESKTOP-KPAI7AG/realtime/floating_point_5_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'floating_point_5' (0#1) [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-16020-DESKTOP-KPAI7AG/realtime/floating_point_5_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'part_0' (0#1) [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/sources_1/new/part_0.v:23]
+INFO: [Synth 8-6157] synthesizing module 'part_1' [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/sources_1/new/part_1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'floating_point_6' [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-16020-DESKTOP-KPAI7AG/realtime/floating_point_6_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'floating_point_6' (0#1) [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-16020-DESKTOP-KPAI7AG/realtime/floating_point_6_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'floating_point_7' [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-16020-DESKTOP-KPAI7AG/realtime/floating_point_7_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'floating_point_7' (0#1) [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-16020-DESKTOP-KPAI7AG/realtime/floating_point_7_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'floating_point_8' [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-16020-DESKTOP-KPAI7AG/realtime/floating_point_8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'floating_point_8' (0#1) [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-16020-DESKTOP-KPAI7AG/realtime/floating_point_8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'part_1' (0#1) [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/sources_1/new/part_1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'floating_point_9' [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-16020-DESKTOP-KPAI7AG/realtime/floating_point_9_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'floating_point_9' (0#1) [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-16020-DESKTOP-KPAI7AG/realtime/floating_point_9_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'shunt_2_series' [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/sources_1/new/shunt_2_series.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'shunt_2_series' (0#1) [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/sources_1/new/shunt_2_series.v:22]
+INFO: [Synth 8-6157] synthesizing module 'floating_point_10' [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-16020-DESKTOP-KPAI7AG/realtime/floating_point_10_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'floating_point_10' (0#1) [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.runs/synth_1/.Xil/Vivado-16020-DESKTOP-KPAI7AG/realtime/floating_point_10_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/sources_1/new/top.v:23]
 WARNING: [Synth 8-3917] design top has port sync driven by constant 0
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1417.895 ; gain = 503.172
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2407.953 ; gain = 501.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1417.895 ; gain = 503.172
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2425.855 ; gain = 519.723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1417.895 ; gain = 503.172
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2425.855 ; gain = 519.723
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1417.895 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2425.855 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_10/floating_point_10/floating_point_9_in_context.xdc] for cell 'u1_float_2_fixed_1'
-Finished Parsing XDC File [d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_10/floating_point_10/floating_point_9_in_context.xdc] for cell 'u1_float_2_fixed_1'
-Parsing XDC File [d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_9/floating_point_9/floating_point_9_in_context.xdc] for cell 'u1_float_2_fixed_0'
-Finished Parsing XDC File [d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_9/floating_point_9/floating_point_9_in_context.xdc] for cell 'u1_float_2_fixed_0'
-Parsing XDC File [d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_8/floating_point_8/floating_point_4_in_context.xdc] for cell 'u1_part_1/u1_float_add_8'
-Finished Parsing XDC File [d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_8/floating_point_8/floating_point_4_in_context.xdc] for cell 'u1_part_1/u1_float_add_8'
-Parsing XDC File [d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_7/floating_point_7/floating_point_0_in_context.xdc] for cell 'u1_part_1/u1_float_multiply_7'
-Finished Parsing XDC File [d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_7/floating_point_7/floating_point_0_in_context.xdc] for cell 'u1_part_1/u1_float_multiply_7'
-Parsing XDC File [d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_5/floating_point_5/floating_point_4_in_context.xdc] for cell 'u1_part_0/u1_float_add_1'
-Finished Parsing XDC File [d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_5/floating_point_5/floating_point_4_in_context.xdc] for cell 'u1_part_0/u1_float_add_1'
-Parsing XDC File [d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_3/floating_point_3/floating_point_0_in_context.xdc] for cell 'u1_part_0/u1_float_mutiply_3'
-Finished Parsing XDC File [d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_3/floating_point_3/floating_point_0_in_context.xdc] for cell 'u1_part_0/u1_float_mutiply_3'
-Parsing XDC File [d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_2/floating_point_2/floating_point_0_in_context.xdc] for cell 'u1_part_0/u1_float_mutiply_2'
-Finished Parsing XDC File [d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_2/floating_point_2/floating_point_0_in_context.xdc] for cell 'u1_part_0/u1_float_mutiply_2'
-Parsing XDC File [d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_1/floating_point_1/floating_point_0_in_context.xdc] for cell 'u1_part_0/u1_float_mutiply_1'
-Finished Parsing XDC File [d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_1/floating_point_1/floating_point_0_in_context.xdc] for cell 'u1_part_0/u1_float_mutiply_1'
-Parsing XDC File [d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u1_clk_wiz_0'
-Finished Parsing XDC File [d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u1_clk_wiz_0'
-Parsing XDC File [d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_0/floating_point_0/floating_point_0_in_context.xdc] for cell 'u1_part_0/u1_float_multiply_0'
-Finished Parsing XDC File [d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_0/floating_point_0/floating_point_0_in_context.xdc] for cell 'u1_part_0/u1_float_multiply_0'
-Parsing XDC File [d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_4/floating_point_4/floating_point_4_in_context.xdc] for cell 'u1_part_0/u1_float_add_0'
-Finished Parsing XDC File [d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_4/floating_point_4/floating_point_4_in_context.xdc] for cell 'u1_part_0/u1_float_add_0'
-Parsing XDC File [d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_6/floating_point_6/floating_point_6_in_context.xdc] for cell 'u1_part_1/u1_float_multiply_6'
-Finished Parsing XDC File [d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_6/floating_point_6/floating_point_6_in_context.xdc] for cell 'u1_part_1/u1_float_multiply_6'
-Parsing XDC File [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/constrs_1/new/top_xdc.xdc]
-Finished Parsing XDC File [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/constrs_1/new/top_xdc.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.srcs/constrs_1/new/top_xdc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Parsing XDC File [d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_10/floating_point_10/floating_point_9_in_context.xdc] for cell 'u1_float_2_fixed_1'
+Finished Parsing XDC File [d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_10/floating_point_10/floating_point_9_in_context.xdc] for cell 'u1_float_2_fixed_1'
+Parsing XDC File [d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_9/floating_point_9/floating_point_9_in_context.xdc] for cell 'u1_float_2_fixed_0'
+Finished Parsing XDC File [d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_9/floating_point_9/floating_point_9_in_context.xdc] for cell 'u1_float_2_fixed_0'
+Parsing XDC File [d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_8/floating_point_8/floating_point_4_in_context.xdc] for cell 'u1_part_1/u1_float_add_8'
+Finished Parsing XDC File [d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_8/floating_point_8/floating_point_4_in_context.xdc] for cell 'u1_part_1/u1_float_add_8'
+Parsing XDC File [d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_7/floating_point_7/floating_point_0_in_context.xdc] for cell 'u1_part_1/u1_float_multiply_7'
+Finished Parsing XDC File [d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_7/floating_point_7/floating_point_0_in_context.xdc] for cell 'u1_part_1/u1_float_multiply_7'
+Parsing XDC File [d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_5/floating_point_5/floating_point_4_in_context.xdc] for cell 'u1_part_0/u1_float_add_1'
+Finished Parsing XDC File [d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_5/floating_point_5/floating_point_4_in_context.xdc] for cell 'u1_part_0/u1_float_add_1'
+Parsing XDC File [d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_3/floating_point_3/floating_point_0_in_context.xdc] for cell 'u1_part_0/u1_float_mutiply_3'
+Finished Parsing XDC File [d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_3/floating_point_3/floating_point_0_in_context.xdc] for cell 'u1_part_0/u1_float_mutiply_3'
+Parsing XDC File [d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_2/floating_point_2/floating_point_0_in_context.xdc] for cell 'u1_part_0/u1_float_mutiply_2'
+Finished Parsing XDC File [d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_2/floating_point_2/floating_point_0_in_context.xdc] for cell 'u1_part_0/u1_float_mutiply_2'
+Parsing XDC File [d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_1/floating_point_1/floating_point_0_in_context.xdc] for cell 'u1_part_0/u1_float_mutiply_1'
+Finished Parsing XDC File [d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_1/floating_point_1/floating_point_0_in_context.xdc] for cell 'u1_part_0/u1_float_mutiply_1'
+Parsing XDC File [d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u1_clk_wiz_0'
+Finished Parsing XDC File [d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u1_clk_wiz_0'
+Parsing XDC File [d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_0/floating_point_0/floating_point_0_in_context.xdc] for cell 'u1_part_0/u1_float_multiply_0'
+Finished Parsing XDC File [d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_0/floating_point_0/floating_point_0_in_context.xdc] for cell 'u1_part_0/u1_float_multiply_0'
+Parsing XDC File [d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_4/floating_point_4/floating_point_4_in_context.xdc] for cell 'u1_part_0/u1_float_add_0'
+Finished Parsing XDC File [d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_4/floating_point_4/floating_point_4_in_context.xdc] for cell 'u1_part_0/u1_float_add_0'
+Parsing XDC File [d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_6/floating_point_6/floating_point_6_in_context.xdc] for cell 'u1_part_1/u1_float_multiply_6'
+Finished Parsing XDC File [d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/floating_point_6/floating_point_6/floating_point_6_in_context.xdc] for cell 'u1_part_1/u1_float_multiply_6'
+Parsing XDC File [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/constrs_1/new/top_xdc.xdc]
+Finished Parsing XDC File [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/constrs_1/new/top_xdc.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.srcs/constrs_1/new/top_xdc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.runs/synth_1/dont_touch.xdc]
+Parsing XDC File [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1504.738 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2526.473 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1504.738 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2526.473 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1504.738 ; gain = 590.016
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2526.473 ; gain = 620.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1504.738 ; gain = 590.016
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2526.473 ; gain = 620.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for sys_clk. (constraint file  d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk. (constraint file  d:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk. (constraint file  d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk. (constraint file  d:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
 Applied set_property KEEP_HIERARCHY = SOFT for u1_float_2_fixed_1. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for u1_float_2_fixed_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for u1_part_1/u1_float_add_8. (constraint file  auto generated constraint).
@@ -151,10 +152,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for u1_part_0/u1_float_multiply_0. (c
 Applied set_property KEEP_HIERARCHY = SOFT for u1_part_0/u1_float_add_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for u1_part_1/u1_float_multiply_6. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1504.738 ; gain = 590.016
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2526.473 ; gain = 620.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1504.738 ; gain = 590.016
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2526.473 ; gain = 620.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -191,25 +192,25 @@ Start Cross Boundary and Area Optimization
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 WARNING: [Synth 8-3917] design top has port sync driven by constant 0
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1504.738 ; gain = 590.016
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2526.473 ; gain = 620.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1504.738 ; gain = 590.016
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2526.473 ; gain = 620.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1504.738 ; gain = 590.016
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2526.473 ; gain = 620.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1504.738 ; gain = 590.016
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2526.473 ; gain = 620.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -227,37 +228,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 1504.738 ; gain = 590.016
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2526.473 ; gain = 620.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 1504.738 ; gain = 590.016
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2526.473 ; gain = 620.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 1504.738 ; gain = 590.016
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2526.473 ; gain = 620.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 1504.738 ; gain = 590.016
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2526.473 ; gain = 620.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 1504.738 ; gain = 590.016
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2526.473 ; gain = 620.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 1504.738 ; gain = 590.016
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2526.473 ; gain = 620.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -298,24 +299,24 @@ Report Cell Usage:
 |21    |OBUF           |     4|
 +------+---------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 1504.738 ; gain = 590.016
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2526.473 ; gain = 620.340
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:30 . Memory (MB): peak = 1504.738 ; gain = 503.172
-Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 1504.738 ; gain = 590.016
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 2526.473 ; gain = 519.723
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2526.473 ; gain = 620.340
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1504.738 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2526.473 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1504.738 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2526.473 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 Synth Design complete | Checksum: 3273ef27
 INFO: [Common 17-83] Releasing license: Synthesis
-56 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+57 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:47 . Memory (MB): peak = 1504.738 ; gain = 990.863
-INFO: [Common 17-1381] The checkpoint 'D:/Users/Vivado2023.1/Projects/Memristor_demo/Memristor_demo.runs/synth_1/top.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2526.473 ; gain = 1023.508
+INFO: [Common 17-1381] The checkpoint 'D:/home/wxss/GitProject/MCUCodes/Memristor_demo/Memristor_demo.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Apr 24 14:04:00 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 21 23:16:06 2025...
